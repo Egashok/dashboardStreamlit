@@ -4,7 +4,7 @@
 
 Интерактивный дашборд датчика пожара
 
-Открыть сайт https://dashboardapp-zsgjtutkkbmdz2ukfepqqf.streamlit.app/
+Открыть сайт https://shoker.streamlit.app/
 
 ## Примеры
 
