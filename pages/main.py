@@ -78,18 +78,18 @@ button_clicked = st.button("Предсказать")
 
 if button_clicked:
     print('xz')
-    with open('../models/KNN.pkl', 'rb') as file:
+    with open('models/KNN.pkl', 'rb') as file:
         lr = pickle.load(file)
-    with open('../models/Bagging.pkl', 'rb') as file:
+    with open('models/Bagging.pkl', 'rb') as file:
         bagging_model = pickle.load(file)
-    with open('../models/Gradien.pkl', 'rb') as file:
+    with open('models/Gradien.pkl', 'rb') as file:
         gradient_model = pickle.load(file)
-    with open('../models/Kmeans.pkl', 'rb') as file:
+    with open('models/Kmeans.pkl', 'rb') as file:
          kmeans_model= pickle.load(file)
     from tensorflow.keras.models import load_model
-    nn_model = load_model('../models/nn.h5')
+    nn_model = load_model('models/nn.h5')
 
-    with open('../models/Stacking.pkl', 'rb') as file:
+    with open('models/Stacking.pkl', 'rb') as file:
         stacking_model = pickle.load(file)
 
     st.header("KNN:")

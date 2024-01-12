@@ -6,4 +6,4 @@ st.title("Разработка дашборда для моделей ML и ан
 st.header("Автор:")
 st.write("ФИО: Шохин Егор Павлович")
 st.write("Группа: ФИТ-221")
-st.image("../data/photoahahahah.jpg",width =200)
+st.image("data/photoahahahah.jpg",width =200)
