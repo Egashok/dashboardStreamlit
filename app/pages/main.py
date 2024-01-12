@@ -11,7 +11,7 @@ if uploaded_file is not None:
 
     st.write("Загруженный датасет:", df)
 
-    st.title("Датасет moldova cars")
+    st.title("Датасет smoke detector")
 
 st.title("Получить предсказания пожара.")
 
@@ -77,6 +77,7 @@ data = pd.DataFrame({'UTC': [utc],
 button_clicked = st.button("Предсказать")
 
 if button_clicked:
+    print('xz')
     with open('../models/KNN.pkl', 'rb') as file:
         lr = pickle.load(file)
     with open('../models/Bagging.pkl', 'rb') as file:
